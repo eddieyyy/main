@@ -1,0 +1,43 @@
+.header {
+    color: black;
+    font-family: fantasy;
+    font-style: italic;
+    font-weight: bold;
+}
+.userNameTable{
+    position:relative;
+    border-collapse: collapse;
+}
+#userName{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.userNameTable th {
+    border: solid 1px black;
+}
+
+#currentEvent{
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+#eventPoster{
+    width:220px;
+    margin-left:50px;
+    display: inline-block;
+    position:relative;
+
+
+}
+#eventPosterPic{
+    margin-left:10px;
+    margin-right:10px;
+    width: 200px;
+    height: 200px;
+}
+#eventDetail{
+    margin-left:20px;
+    display: inline-block;
+
+}
