@@ -76,7 +76,10 @@ a:hover {
     color:#000000;
     text-decoration:none;
 }
-
+.currentEventName{
+    font-size: large;
+    text-align: center;
+}
 
 .name {
     text-align: center;
