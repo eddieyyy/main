@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="register_style.css">
+ </head>
+ <body>
+
+    <div id = "root">
+      <div class = "web_name" id = "logo"  > StarHub </div>
+      <div class = "first_section"> 
+        <section class = "section1">
+          <h1 class = "title"> Welcome to StarHub </h1>
+          <h2 class = "subtitle"> The most popular fans community </h2>
+          <br> <br> <br>
+          <div class = "register_container">
+            <form id = "register_form">
+              <div class = "form_line">
+                <div class = "register_info">
+                  <input autocomplete = "off" class = "info" id='newusername' type="text" placeholder="User Name">
+                </div>
+                <span class = "error_message" id = "userNameError"> </span>
+              </div>
+              <div class = "register_hiddengroup"> </div>
+
+              <div class = "form_line">
+                <div class = "register_info">
+                  <input autocomplete = "off" class = "info" id='newpassword' type="password" placeholder="Password">
+                </div>
+                <span class = "error_message" id = "passwordError">  </span>
+              </div>
+              <div class = "register_hiddengroup"> </div>
+
+              <div class = "form_line">
+                <div class = "register_info">
+                  <input autocomplete = "off" class = "info" id='confirmpassword' type="password" placeholder="Confirm your password">
+                </div>
+                <span class = "error_message" id = "confirmError"> </span>
+              </div>
+              <div class = "register_hiddengroup"> </div>
+
+              <div class = "form_line">
+                <div class = "register_info">
+                  <input autocomplete = "off" class = "info" id='email' type="text" placeholder="Email">
+                </div>
+                <span class = "error_message" id = "emailError"> </span>
+              </div>
+
+              <div class = "form_line"> </div>
+                <label class = "agreement" id = "agreement">
+                  <label class = "checkbox">
+                    <input name = "agree" type = "checkbox" id = "check"> 
+                  </label>
+                  I agree to StarHub's" <a target = "_blank" href = ""> Condition of Use </a>
+                
+                </label>
+                <span class = "error_message" id = "agreementError">  </span>
+
+              </div>
+
+              <div class = "register_hiddengroup"> </div>
+
+              <div class = "form_line">
+                <input class = "submit" type="submit" value="Register">
+                 
+              </div>
+
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+
+  <script type="text/javascript" src="register.js"></script>
+ </body>
+</html>
