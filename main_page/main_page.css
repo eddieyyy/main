@@ -1,0 +1,108 @@
+body {
+	background: url(background.jpg);
+}
+
+.header {
+	color: white;
+	font-family: fantasy;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#search {
+	height: 40px;
+	/*border-style: dashed;*/
+	/*border-color: grey;*/
+	/*background: -webkit-linear-gradient(right, grey, white); 
+    background: -o-linear-gradient(left, grey, white); 
+    background: -moz-linear-gradient(left, grey, white); 
+    background: linear-gradient(to left, grey, white); */
+}
+
+#topHeader {
+	position: relative;
+	height: 70px;
+	/*background: -webkit-linear-gradient(left, grey, white);
+    background: -o-linear-gradient(right, grey, white); 
+    background: -moz-linear-gradient(right, grey, white); 
+    background: linear-gradient(to right, grey, white); */
+    text-align: center;
+
+}
+
+#login {
+	position: absolute;
+	top: 10px;
+	right: 50px;
+	color: white;
+}
+
+.login {
+	color: white;
+}
+
+
+#searchInput {
+	margin-left: 50px;
+	margin-top: 10px;
+}
+
+#events {
+	position: relative;
+	margin-top: 40px;
+	margin-left: 50px;
+	margin-right: 50px;
+	border-style: outset;
+	border-color: grey;
+	background-color: white;
+}
+
+
+
+
+.event {
+	min-width: 25%;
+}
+
+.pic {
+
+	margin-left: 50px;
+	margin-right: 50px;
+	height: 200px;
+	width: 160px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px
+}
+
+a:link { 
+	text-decoration:none;
+} 
+a:visited { 
+
+text-decoration:none; 
+} 
+a:hover { 
+color:#000000; 
+text-decoration:none; 
+} 
+
+
+.name {
+	text-align: center;
+}
+
+#title {
+	font-family: fantasy;
+	font-size: large; 
+	margin-left: 10px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.error {
+	font-family: fantasy;
+	font-size: large;
+	color: red;
+}
+
