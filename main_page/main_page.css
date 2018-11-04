@@ -52,13 +52,9 @@ body {
 	margin-top: 40px;
 	margin-left: 50px;
 	margin-right: 50px;
-	border-style: outset;
-	border-color: grey;
+	border: outset grey;
 	background-color: white;
 }
-
-
-
 
 .event {
 	min-width: 25%;
