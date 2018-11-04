@@ -1,0 +1,160 @@
+#root{
+	background: url(login.jpg);
+	background-position: center center;
+  	background-repeat: no-repeat;
+
+  background-size: cover;
+}
+
+.header{
+
+	padding: 0.5px;
+	height: 50px;
+	background-color: white;
+	
+}
+
+
+
+
+.first_section{
+	min-height: 100vh;
+}
+
+.section1{
+	padding-bottom: 2em;
+	padding-left: 3em;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
+
+#logo{
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-size: 3em;
+	text-align: left;
+	color: red;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: fantasy;
+	font-style: italic;
+	font-size: 3em;
+	width: 50px;
+	cursor: pointer;
+
+}
+
+.login_container{
+	width: 390px;
+	margin: 0 auto;
+	padding: 60px 0
+	display: block;
+	position: relative;
+	margin-right: 1em;
+	background-color: rgba(255, 255, 255, .9);
+}
+
+.login_form{
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+
+.form_line{
+	width: 350px;
+	margin-top: 40px;
+	margin-left: 20px;
+	font-size: 12px;
+	position: relative
+	padding: 0;
+	display: block;
+}
+
+.login_info{
+	position: relative;
+	font-size: 14px;
+	display: inline-block;
+	width: 100%
+	
+}
+
+
+.error_message{
+	color: #f45d90;
+	position: relative;
+	top: 20px;
+
+}
+.hiddengroup{
+	width: 350px;
+	height: 10px;
+	margin: 0 auto
+	padding: 0;
+	display: block;
+}
+
+
+
+.agreement{
+	font-size: 12px;
+	position: relative;
+	left: 490px;
+	top: 12px;
+	border: 1px solid white;
+
+
+}
+
+.info{
+	-webkit-appearance: none;
+	background-color: #fff;
+	background-image: none;
+	border-radius: 4px;
+	border: 1px solid #dcdfe6;
+	box-sizing: border-box;
+	color: #606266;
+	display: inline-block;
+	font-size: inherit;
+	height: 40px;
+	line-height: 40px;
+	outline: 0;
+	padding: 0 15px;
+	width: 100%
+}
+
+#buttonLine{
+	margin-bottom: 40px;
+}
+
+
+.submit{
+	display: inline-block;
+	line-height: 1;
+	white-space: nowrap;
+	cursor: pointer;
+	background: #fff;
+	border: 1px solid #dcdfe6;
+	-webkit-appearance: none;
+	text-align: center;
+	transition: .1s;
+	font-weight: 500;
+	padding: 12px 20px;
+	font-size: 14px;
+	background-color: #00a1d6;
+	width: 48%
+}
+
+
+
+#register{
+	background: white;
+
+}
