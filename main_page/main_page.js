@@ -113,7 +113,7 @@ function generator(targets){
 		event_name.setAttribute("class", "name");
 		const new_link = document.createElement("a");
 		new_link.setAttribute("href", targets[0].website);
-		const text = document.createTextNode(targets[0].name)
+		const text = document.createTextNode(targets[0].name);
 		new_link.appendChild(text);
 		event_name.appendChild(new_link);
 		new_element.appendChild(event_name);
