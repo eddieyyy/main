@@ -84,7 +84,7 @@ function all_fields_filled(username, password, confirmPassword, email, checkbox)
 }
 
 function toMainPage(e){
-	window.location.href = "../main_page/.html"
+	window.location.href = "../main_page/index.html"
 }
 
 function clear_error_message(){
