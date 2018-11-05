@@ -66,7 +66,7 @@ function all_fields_filled(username, password){
 
 
 function toMainPage(e){
-	window.location.href = "../main_page/main_page.html"
+	window.location.href = "../main_page/index.html"
 }
 
 function toRegisterPage(e){
@@ -95,7 +95,7 @@ function check_input_valid(username, password){
 		if (username == Users[i].username){
 			if (password == Users[i].password){
 				if (Users[i].admin == false){
-					window.location.href = "../main_page/main_page.html"
+					window.location.href = "../main_page/index.html"
 				}
 				else{
 					console.log(222)
