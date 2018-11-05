@@ -11,6 +11,7 @@ class User {
 		this.follows = [];
 		this.events = [];
 		numberOfUsers++;
+		this.admin = false
 	}
 
 }
@@ -18,7 +19,10 @@ class User {
 Users.push(new User("Eddie", "123456", "eddie@gmail.com"))
 Users.push(new User("Amber", "aabbccd", "amber@gmail.com"))
 Users.push(new User("Martin", "1010", "martin@gmail.com"))
-Users.push(new User("Howard", "qwert", "howard@gmail.com"))
+const howard = new User("Howard", "qwert", "howard@gmail.com")
+howard.admin = true
+Users.push(howard)
+
 
 
 const login_form = document.querySelector("#login_form");
@@ -52,12 +56,10 @@ function all_fields_filled(username, password){
 	}
 
 	if (check == 0){
-		console.log(0)
 
 		return true
 	}
 
-	console.log(1)
 
 	return false
 }
@@ -88,9 +90,17 @@ function clear_error_message(){
 
 
 function check_input_valid(username, password){
+	console.log(Users)
 	for (let i = 0, len = Users.length; i < len; i++){
 		if (username == Users[i].username){
 			if (password == Users[i].password){
+				if (Users[i].admin == false){
+					window.location.href = "../main_page/main_page.html"
+				}
+				else{
+					console.log(222)
+					window.location.href = "../admin_page/admin_page.html"
+				}
 				return true
 			}
 			else{
@@ -116,17 +126,17 @@ function check_input_valid(username, password){
 }
 
 
+
+
+
 function login(e){
 	e.preventDefault();
 	clear_error_message()
 	const username = document.querySelector('#username').value
 	const password = document.querySelector('#password').value
 	if(all_fields_filled(username, password)){
-		if(check_input_valid(username, password)){
-			window.location.href = "main_page.html"
-			}
-
-		}
+		check_input_valid(username, password)
+	}
 	
 	
 }
