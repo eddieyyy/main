@@ -20,63 +20,78 @@ events.push(new Event("teamLab Borderless", "Toronto", "Japan", "teamLab", "MORI
 
 const searchBox = document.querySelector("#search");
 const eventTable = document.querySelector("#eventTable");
+// const eventLinks = document.querySelector(".toEvent");
 searchBox.addEventListener("submit", searchEvent);
+// for (let i=0; i<eventLinks.length; i++){
+// 	eventLinks.addEventListener("clicked", to);
+// }
+
+// pass the value of event user clicked to event page
+function to(e){
+	console.log(e.target);
+}
 
 
 function searchEvent(e){
 	e.preventDefault();
 	// get input info
-	const inputText = document.querySelector("#searchInput").value;
+	const inputbox = document.querySelector("#searchInput")
+	const inputText = inputbox.value;
 	const category = document.querySelector("#searchtype").value;
 
-	// select corresponding events and stores in targets
-	const targets = [];
-	let i;
-	switch (category){
-		case "city":
-			for (i=0; i<events.length; i++){
-				if (events[i].city == inputText){
-					targets.push(events[i]);
-				}
-			}
-			break;
-		case "country":
-			for (i=0; i<events.length; i++){
-				if (events[i].country == inputText){
-					targets.push(events[i]);
-				}
-			}
-			break;
-		case "artist":
-			for (i=0; i<events.length; i++){
-				if (events[i].artist == inputText){
-					targets.push(events[i]);
-				}
-			}
-			break;
-		case "event":
-			for (i=0; i<events.length; i++){
-				if (events[i].name == inputText){
-					targets.push(events[i]);
-				}
-			}
-			break;
-		case "venue":
-			for (i=0; i<events.length; i++){
-				if (events[i].venue == inputText){
-					targets.push(events[i]);
-				}
-			}
-			break;
-	}
-	if (targets.length == 0){
-		noRelated(category, inputText);
+	if (inputText == ""){
+		inputbox.setAttribute("placeholder", `Please enter ${category} name`);
 	} else {
-		generator(targets);
-	}
-	
-	
 
+		// select corresponding events and stores in targets
+		const targets = [];
+		let i;
+		switch (category){
+			case "city":
+				for (i=0; i<events.length; i++){
+					if (events[i].city == inputText){
+						targets.push(events[i]);
+					}
+				}
+				break;
+			case "country":
+				for (i=0; i<events.length; i++){
+					if (events[i].country == inputText){
+						targets.push(events[i]);
+					}
+				}
+				break;
+			case "artist":
+				for (i=0; i<events.length; i++){
+					if (events[i].artist == inputText){
+						targets.push(events[i]);
+					}
+				}
+				break;
+			case "event":
+				for (i=0; i<events.length; i++){
+					if (events[i].name == inputText){
+						targets.push(events[i]);
+					}
+				}
+				break;
+			case "venue":
+				for (i=0; i<events.length; i++){
+					if (events[i].venue == inputText){
+						targets.push(events[i]);
+					}
+				}
+				break;
+		}
+		if (targets.length == 0){
+			noRelated(category, inputText);
+		} else {
+			generator(targets);
+		}
+	}
+
+
+	
 }
 
 // execute if no event is related to input text under given category.
@@ -113,7 +128,9 @@ function generator(targets){
 		event_name.setAttribute("class", "name");
 		const new_link = document.createElement("a");
 		new_link.setAttribute("href", targets[0].website);
-		const text = document.createTextNode(targets[0].name);
+		// new_link.setAttribute("class", "toEvent");
+		// new_link.addEventListener("click", to);
+		// const text = document.createTextNode(targets[0].name);
 		new_link.appendChild(text);
 		event_name.appendChild(new_link);
 		new_element.appendChild(event_name);
