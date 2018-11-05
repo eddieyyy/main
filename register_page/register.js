@@ -11,6 +11,7 @@ class User {
 		this.follows = [];
 		this.events = [];
 		numberOfUsers++;
+		this.admin = false;
 	}
 
 }
