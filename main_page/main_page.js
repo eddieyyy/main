@@ -20,22 +20,14 @@ events.push(new Event("teamLab Borderless", "Toronto", "Japan", "teamLab", "MORI
 
 const searchBox = document.querySelector("#search");
 const eventTable = document.querySelector("#eventTable");
-// const eventLinks = document.querySelector(".toEvent");
 searchBox.addEventListener("submit", searchEvent);
-// for (let i=0; i<eventLinks.length; i++){
-// 	eventLinks.addEventListener("clicked", to);
-// }
 
-// pass the value of event user clicked to event page
-function to(e){
-	console.log(e.target);
-}
 
 
 function searchEvent(e){
 	e.preventDefault();
 	// get input info
-	const inputbox = document.querySelector("#searchInput")
+	const inputbox = document.querySelector("#searchInput");
 	const inputText = inputbox.value;
 	const category = document.querySelector("#searchtype").value;
 
@@ -128,9 +120,8 @@ function generator(targets){
 		event_name.setAttribute("class", "name");
 		const new_link = document.createElement("a");
 		new_link.setAttribute("href", targets[0].website);
-		// new_link.setAttribute("class", "toEvent");
-		// new_link.addEventListener("click", to);
-		// const text = document.createTextNode(targets[0].name);
+
+		const text = document.createTextNode(targets[0].name);
 		new_link.appendChild(text);
 		event_name.appendChild(new_link);
 		new_element.appendChild(event_name);
