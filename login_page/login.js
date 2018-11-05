@@ -95,7 +95,7 @@ function check_input_valid(username, password){
 		if (username == Users[i].username){
 			if (password == Users[i].password){
 				if (Users[i].admin == false){
-					window.location.href = "../main_page/index.html"
+					window.location.href = "../main_page/main_page.html"
 				}
 				else{
 					console.log(222)
