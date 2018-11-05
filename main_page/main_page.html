@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- This is where we put metadata -->
+		<meta charset="utf-8">
+		<title>Starhub</title>
+		<link rel="stylesheet" type="text/css" href="main_page.css">
+	</head>
+	
+	<body>
+
+		
+		<div id="topHeader">
+			<font size="7" class="header">STARHUB</font>
+		</div>
+		<div id="login">
+			<p>Welcome to STARHUB!</p>
+		</div>
+
+		<form id="search">
+			<input id="searchInput" type="text" name="keyword" placeholder="City/Artist/Event" size="35">
+			<select id="searchtype">
+				<option value="city">By City</option>
+				<option value="country">By Country</option>
+				<option value="artist">By Artist</option>
+				<option value = "event">By Event</option>
+				<option value = "venue">By Venue</option>
+			</select>
+			<input type="submit" value="search">
+			
+		</form>
+
+		<div id="events">
+			<p id="title">Recent Events:</p>
+			<table id="eventTable">
+				<tr>
+					<td class="event">
+						<img class="pic" src="japan_now.jpg">
+						<p class="name"><a href="../event_page/Event_Page.html">Japan Now</a></p>
+					</td>
+					<td class="event">
+						<img class="pic" src="Let_there_be_love.jpg">
+						<p class="name"><a href="../event_page/Event_Page.html">Let there be Love</a></p>
+					</td>
+					<td class="event">
+						<img class="pic" src="northwood.jpg">
+						<p class="name"><a href="../event_page/Event_Page.html">Northwood</a></p>
+					</td>
+					<td class="event">
+						<img class="pic" src="Forgotten_Genius.jpg">
+						<p class="name"><a href="../event_page/Event_Page.html">Forgotten Genius</a></p>
+					</td>
+				</tr>
+
+
+			</table>
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="main_page.js"></script>
+
+</html>
