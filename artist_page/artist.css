@@ -1,0 +1,101 @@
+.header {
+    color: black;
+    font-family: fantasy;
+    font-style: italic;
+    font-weight: bold;
+}
+.userNameTable{
+    position:relative;
+    border-collapse: collapse;
+}
+#userName{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.userNameTable th {
+    border: solid 1px black;
+}
+
+#currentArtist{
+    margin-left: 20px;
+    margin-top: 80px;
+}
+
+#artistPoster{
+    width:420px;
+    margin-left:50px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+#artistPic{
+    margin-left:10px;
+    margin-right:10px;
+    width: 400px;
+    height: 400px;
+
+}
+#artistDetail{
+    margin-left:20px;
+    display: inline-block;
+    vertical-align: top;
+
+
+}
+#events {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: outset grey;
+    background-color: white;
+}
+
+.event {
+    min-width: 25%;
+}
+
+.pic {
+
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 200px;
+    width: 160px;
+    border: 1px solid black;
+}
+
+a:link {
+    text-decoration:none;
+}
+a:visited {
+
+    text-decoration:none;
+}
+a:hover {
+    color:#000000;
+    text-decoration:none;
+}
+.currentArtistName{
+    font-size: large;
+    text-align: center;
+}
+
+.name {
+    text-align: center;
+}
+
+#title {
+    font-family: fantasy;
+    font-size: large;
+    margin-left: 10px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.error {
+    font-family: fantasy;
+    font-size: large;
+    color: red;
+}
+
