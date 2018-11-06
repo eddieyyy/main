@@ -17,26 +17,26 @@
     border: solid 1px black;
 }
 
-#currentArtist{
+#currentUser{
     margin-left: 20px;
     margin-top: 80px;
 }
 
-#artistPoster{
+#userPoster{
     width:420px;
     margin-left:50px;
     display: inline-block;
     vertical-align: top;
 
 }
-#artistPic{
+#userPic{
     margin-left:10px;
     margin-right:10px;
     width: 400px;
     height: 400px;
 
 }
-#artistDetail{
+#userDetail{
     margin-left:20px;
     display: inline-block;
     vertical-align: top;
