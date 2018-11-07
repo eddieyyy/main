@@ -1,4 +1,25 @@
-// Constructor to create events
+
+let numberOfUsers = 0;
+
+const Users = [];
+
+class User {
+    constructor(username, password, email) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.follows = [];
+        this.events = [];
+        numberOfUsers++;
+        this.admin = false;
+    }
+}
+
+Users.push(new User("Eddie", "123456", "eddie@gmail.com"));
+Users.push(new User("Amber", "aabbccd", "amber@gmail.com"));
+Users.push(new User("Martin", "1010", "martin@gmail.com"));
+Users.push(new User("Howard", "qwert", "howard@gmail.com"));
+
 function Event(name, city, country, artist, venue, website, poster) {
     this.name = name;
     this.city = city;
@@ -8,9 +29,12 @@ function Event(name, city, country, artist, venue, website, poster) {
     this.website = website;
     this.poster = poster;
 }
+
+const changePass = document.querySelector("#passwordSubmit");
 const logo = document.querySelector("#logo");
 const events = [];
 
+changePass.addEventListener("click", changePassword);
 logo.addEventListener("click", toMainPage);
 // Adding events;
 events.push(new Event("Let there be Love", "Toronto", "Canada", null, "Areei Gallery", "http://canadianarabicorchestra.ca/calligraphy-gallery/", "Let_there_be_love.jpg"));
@@ -30,4 +54,15 @@ function changePage(e){
 
 function toMainPage(e){
     window.location.href = "../main_page/index.html"
+}
+
+const userID = document.getElementById("userID").innerText;
+function changePassword(e){
+    e.preventDefault();
+    const newPassword = document.querySelector('#newPassword').value;
+    for (let i = 0; i < Users.length;i++){
+        if (Users[i].username === userID){
+            Users[i].password = newPassword;
+        }
+    }
 }
