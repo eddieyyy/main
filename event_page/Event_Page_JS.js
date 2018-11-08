@@ -18,6 +18,11 @@ events.push(new Event("Japan Now", "Toronto", "Canada", null, "Female Masters at
 events.push(new Event("teamLab Borderless", "Toronto", "Japan", "teamLab", "MORI Building DIGITAL ART MUSEUM", "https://borderless.teamlab.art/", "teamLab.jpg"));
 
 const eventName = document.querySelectorAll(".name");
+const user = document.getElementById("user");
+user.addEventListener("click", changeToUser);
+// function changeToUser (){
+//
+// }
 eventName.forEach(function (element){
     element.addEventListener("click", changePage)
 });
