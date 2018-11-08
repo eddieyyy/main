@@ -20,9 +20,9 @@ events.push(new Event("teamLab Borderless", "Toronto", "Japan", "teamLab", "MORI
 
 const searchBox = document.querySelector("#search");
 const eventTable = document.querySelector("#eventTable");
+
 searchBox.addEventListener("submit", searchEvent);
-
-
+web_name.addEventListener("click", toMain);
 
 
 function searchEvent(e){
