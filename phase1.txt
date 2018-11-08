@@ -11,16 +11,18 @@ The click will take us to the register page.
 4. Now we can fill the username, password, and email to register for a new user. This is same as by clicking the
 register rather than login on the index.html page.
 
-5. Then since we are on the main page, we can check out any events by clicking the name of the event, for example, Japan Now
+5. There is a search box in the main page, by typing the keyword in the search box such as "Toronto" (upper and lower cases matters here), and select correct filter to by City, then the event displayed on the page will change to events in Toronto.
 
-6. This clicking will let us enter event page. Then we can see that there are hyper links for the name of the
+6. Then since we are on the main page, we can check out any events by clicking the name of the event, for example, Japan Now
+
+7. This clicking will let us enter event page. Then we can see that there are hyper links for the name of the
 event and for the website link under "These are the details for current Event".
 
-7. Furthermore, we can click the user's name on the top right corner to jump to the user's page. The user's page allows
+8. Furthermore, we can click the user's name on the top right corner to jump to the user's page. The user's page allows
 us to modify the current user's password and display the current user's information.
 
-8. Now let's go back to the event page. There are recent events display at the bottom of the  page.
+9. Now let's go back to the event page. There are recent events display at the bottom of the  page.
 We can click the name of any event, then it will jump to a new page consist of the information for the event which the user
 clicked.
 
-9. lastly, we can always go back to the main page by clicking the StarHub on the top right corner of the page.
+10. lastly, we can always go back to the main page by clicking the StarHub on the top right corner of the page.
