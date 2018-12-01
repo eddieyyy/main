@@ -66,6 +66,27 @@ p {
 	margin: 0;
 }
 
+
+a:link {
+    text-decoration:none;
+}
+a:visited {
+
+    text-decoration:none;
+}
+a:hover {
+    color:#000000;
+    text-decoration:none;
+}
+
+#login {
+    font-size: 150%;
+    font-family: 'Dosis', fantasy;
+    text-align: left;
+    margin-top: 20px;
+    display: inline-block;
+}
+
 .bodyContainer {
 	display: flex;
 	flex-wrap: wrap;

@@ -40,7 +40,22 @@ request.onload = function () {
     const headerText = document.createTextNode('Ghibli Collection');
     Header.appendChild(headerText);
     topBox.appendChild(Header);
-
+    // add login/register
+    const login = document.createElement('p');
+    const text = document.createTextNode('/');
+    login.setAttribute('id', 'login');
+    const loginLink = document.createElement('a');
+    const loginText = document.createTextNode('Login');
+    const registerText = document.createTextNode('Register');
+    const registerLink = document.createElement('a');
+    loginLink.appendChild(loginText);
+    registerLink.appendChild(registerText);
+    loginLink.href = '../login_page/login.html';
+    registerLink.href = '../register_page/register.html';
+    login.appendChild(loginLink);
+    login.appendChild(text);
+    login.appendChild(registerLink);
+    topBox.appendChild(login);
 
     // create main body for movies
     const bodyContainer = document.createElement('div');
@@ -74,7 +89,6 @@ request.onload = function () {
             const descriptionText = document.createTextNode(movie.description);
             description.setAttribute('class', 'description');
             description.appendChild(descriptionText);
-
 
             // append elements
             movieCard.appendChild(title);
