@@ -29,6 +29,7 @@ request.onload = function () {
     topBox.setAttribute('id', 'topBox');
     view.appendChild(topBox);
 
+
     // create logo
     const logo = document.createElement('img');
     logo.setAttribute('id', 'logo');
@@ -40,22 +41,52 @@ request.onload = function () {
     const headerText = document.createTextNode('Ghibli Collection');
     Header.appendChild(headerText);
     topBox.appendChild(Header);
+
+
     // add login/register
-    const login = document.createElement('p');
-    const text = document.createTextNode('/');
-    login.setAttribute('id', 'login');
+    const nev = document.createElement('div');
+    nev.setAttribute('class', 'dropdown');
+    const button = document.createElement('button');
+    button.setAttribute('class', 'dropButton');
+    const welcome = document.createTextNode('Welcome');
+    const list = document.createElement('i');
+    const listContent = document.createElement('div');
+    listContent.setAttribute('class', 'list-content');
+    button.appendChild(welcome);
+    button.appendChild(list);
+    nev.appendChild(button);
     const loginLink = document.createElement('a');
     const loginText = document.createTextNode('Login');
-    const registerText = document.createTextNode('Register');
     const registerLink = document.createElement('a');
+    const registerText = document.createTextNode('Register');
     loginLink.appendChild(loginText);
     registerLink.appendChild(registerText);
     loginLink.href = '../login_page/login.html';
     registerLink.href = '../register_page/register.html';
-    login.appendChild(loginLink);
-    login.appendChild(text);
-    login.appendChild(registerLink);
-    topBox.appendChild(login);
+    listContent.appendChild(loginLink);
+    listContent.appendChild(registerLink);
+    nev.appendChild(listContent);
+    topBox.appendChild(nev);
+
+    //create a dropdown menu
+    const menu = document.createElement('div');
+    menu.setAttribute('class', 'dropdown');
+    const menuBtn = document.createElement('button');
+    menuBtn.setAttribute('class', 'dropButton');
+    const movies = document.createTextNode('Movies');
+    const l = document.createElement('i');
+    const l_content = document.createElement('div');
+    l_content.setAttribute('class', 'list-content');
+    menuBtn.appendChild(l);
+    menuBtn.appendChild(movies);
+    menu.appendChild(menuBtn);
+    menu.appendChild(l_content);
+    topBox.appendChild(menu);
+
+
+
+
+
 
     // create main body for movies
     const bodyContainer = document.createElement('div');
@@ -74,6 +105,7 @@ request.onload = function () {
             // create division for each movie:
             const movieCard = document.createElement('div');
             movieCard.setAttribute('class', 'movie');
+            movieCard.setAttribute('id', movie.title);
             // create poster
             const poster = document.createElement('img');
             poster.setAttribute('class', 'poster');
@@ -89,6 +121,13 @@ request.onload = function () {
             const descriptionText = document.createTextNode(movie.description);
             description.setAttribute('class', 'description');
             description.appendChild(descriptionText);
+            // add movie to dropdown menu
+            const a = document.createElement('a');
+            a.href = `#${movie.title}`;
+            const a_text = document.createTextNode(movie.title);
+            a.appendChild(a_text);
+            l_content.appendChild(a);
+
 
             // append elements
             movieCard.appendChild(title);

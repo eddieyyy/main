@@ -11,8 +11,61 @@ html {
 	background: #F6F6F6;
 }
 
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+    left: 40px;
+    top: 40px;
+}
+
+.dropdown .dropButton {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: black;
+    border-radius: 12px;
+    font-family: 'Dosis', fantasy;
+    margin: 0;
+}
+
+.dropdown:hover .dropButton {
+    background-color: red;
+}
+
+.list-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.list-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.list-content a:hover {
+    background-color: #ddd;
+}
+
+
+.dropdown:hover .list-content {
+    display: block;
+}
+
+
 #topHeader {
-    margin-bottom: 200px;
+    margin-bottom: 150px;
     float: bottom;
 }
 
@@ -27,7 +80,7 @@ html {
 #logo {
     width: 200px;
     height: 200px;
-    margin-left: 10%;
+    margin-left: 15%;
     margin-top: 20px;
     display: inline;
 }
@@ -48,22 +101,18 @@ html {
     border-radius: 12px;
     display: inline;
     float: left;
-    /*position: absolute;*/
 }
 
 .description {
     display: inline;
-    /*margin-left: 350px;*/
     margin-top: 30px;
-    /*margin: 40px 30px;*/
     top: 30px;
     width: 55%;
     text-align: center;
     font-size: 150%;
     font-family: 'Dosis', fantasy;
     float: left;
-    /*float: inside;*/
-    /*position: absolute;*/
+
 }
 
 
@@ -107,7 +156,6 @@ a:hover {
 	transition: all .2s linear;
     border-radius: 12px;
     margin: 50px 100px;
-    /*position: relative;*/
 }
 
 .movie:hover {
