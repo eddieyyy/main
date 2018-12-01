@@ -27,7 +27,7 @@ html {
 #logo {
     width: 200px;
     height: 200px;
-    margin-left: 17%;
+    margin-left: 10%;
     margin-top: 20px;
     display: inline;
 }
@@ -48,15 +48,22 @@ html {
     border-radius: 12px;
     display: inline;
     float: left;
+    /*position: absolute;*/
 }
 
 .description {
-    display: inline-block;
-    margin: 40px 30px;
-    width: 60%;
+    display: inline;
+    /*margin-left: 350px;*/
+    margin-top: 30px;
+    /*margin: 40px 30px;*/
+    top: 30px;
+    width: 55%;
     text-align: center;
     font-size: 150%;
     font-family: 'Dosis', fantasy;
+    float: left;
+    /*float: inside;*/
+    /*position: absolute;*/
 }
 
 
@@ -100,6 +107,7 @@ a:hover {
 	transition: all .2s linear;
     border-radius: 12px;
     margin: 50px 100px;
+    /*position: relative;*/
 }
 
 .movie:hover {
