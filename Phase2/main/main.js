@@ -146,7 +146,7 @@ request.onload = function () {
 
         const box = e.target;
         let node, title;
-        if (box.className === 'poster' || box.className === 'movieTitle' || box.className === 'description'){
+        if (box.className === 'poster' || box.className === 'movieTitle'){
             node = box.parentNode.childNodes[0];
             log(box.parentNode.childNodes[0]);
             title = node.textContent;
